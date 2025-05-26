@@ -1,0 +1,10 @@
+CREATE TABLE public.shop_cash (
+	dates date NOT NULL,
+	doc_id varchar NOT NULL,
+	category varchar NOT NULL,
+	item varchar NOT NULL,
+	price numeric NOT NULL,
+	amount int2 NOT NULL,
+	discount int2 NOT NULL,
+	CONSTRAINT shop_cash_pk PRIMARY KEY (dates, doc_id, category, item, price, amount, discount)
+);
